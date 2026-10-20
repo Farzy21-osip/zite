@@ -1,0 +1,9 @@
+/* Styles for SpecularButton.jsx (written to match its class names and CSS variables). */
+.specular-button{position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:var(--sb-radius,18px);color:var(--sb-text-color,#f5f5f5);background:color-mix(in srgb,var(--sb-tint,#fff) calc(var(--sb-tint-opacity,.04) * 100%),transparent);-webkit-backdrop-filter:blur(var(--sb-blur,0px));backdrop-filter:blur(var(--sb-blur,0px));font:500 17px/1 var(--f-body),system-ui,sans-serif;cursor:pointer;transition:transform .2s}
+.specular-button:active{transform:scale(.985)}
+.specular-button:disabled{opacity:.5;cursor:not-allowed}
+.specular-button--sm{height:38px;padding:0 20px;font-size:14px}
+.specular-button--md{height:46px;padding:0 26px;font-size:16px}
+.specular-button--lg{height:58px;padding:0 38px;font-size:18px}
+.specular-button__light{position:absolute;left:-24px;top:-24px;width:calc(100% + 48px);height:calc(100% + 48px);pointer-events:none}
+.specular-button__label{position:relative;z-index:1}
