@@ -1,0 +1,85 @@
+{
+  "headline": "One sentence that sums you up (placeholder).",
+  "intro": "A short, honest introduction: who you are and what you care about.",
+  "role": "Student and maker (placeholder)",
+  "portrait": "/me/photo-blue-2.webp",
+  "orbitTitle": "Moments",
+  "links": [
+    {
+      "label": "GitHub",
+      "href": ""
+    },
+    {
+      "label": "LinkedIn",
+      "href": ""
+    }
+  ],
+  "photos": [
+    {
+      "src": "/me/me-1.svg",
+      "caption": "Sample photo 1: replace with a photo of you.",
+      "date": "2026-01-05"
+    },
+    {
+      "src": "/me/me-2.svg",
+      "caption": "Sample photo 2: replace with a photo of you.",
+      "date": "2026-02-05"
+    },
+    {
+      "src": "/me/me-3.svg",
+      "caption": "Sample photo 3: replace with a photo of you.",
+      "date": "2026-03-05"
+    },
+    {
+      "src": "/me/me-4.svg",
+      "caption": "Sample photo 4: replace with a photo of you.",
+      "date": "2026-04-05"
+    },
+    {
+      "src": "/me/me-5.svg",
+      "caption": "Sample photo 5: replace with a photo of you.",
+      "date": "2026-05-05"
+    },
+    {
+      "src": "/me/me-6.svg",
+      "caption": "Sample photo 6: replace with a photo of you.",
+      "date": "2026-06-05"
+    }
+  ],
+  "facts": [
+    {
+      "k": "Based in",
+      "v": "Your city"
+    },
+    {
+      "k": "Studying",
+      "v": "Your school or field"
+    },
+    {
+      "k": "Interests",
+      "v": "A few of the things you like"
+    },
+    {
+      "k": "Languages",
+      "v": "The languages you speak"
+    }
+  ],
+  "sections": [
+    {
+      "h": "Who I am",
+      "p": "Placeholder. Tell the story of who you are, in your own words.\n\nA second paragraph is fine too."
+    },
+    {
+      "h": "What I care about",
+      "p": "Placeholder. What fascinates you, and why?"
+    },
+    {
+      "h": "How I learn",
+      "p": "Placeholder. How you study, build and find things out."
+    },
+    {
+      "h": "Beyond school",
+      "p": "Placeholder. What you do when you are not studying."
+    }
+  ]
+}
