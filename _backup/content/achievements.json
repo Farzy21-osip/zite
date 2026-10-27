@@ -1,0 +1,144 @@
+[
+  {
+    "type": "award",
+    "year": "2026",
+    "title": "Sample award 1",
+    "comp": "c1",
+    "icon": "/icons/sample-award-1.svg",
+    "hue": 45,
+    "text": "Competition name, what it was for, and what it meant to me.",
+    "event": "Event name and organizer",
+    "media": [
+      {
+        "src": "/media/sample-1.svg",
+        "caption": "Sample photo 1: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-2.svg",
+        "caption": "Sample photo 2: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-3.svg",
+        "caption": "Sample photo 3: describe what the picture shows."
+      }
+    ],
+    "docs": [
+      {
+        "title": "Certificate (PDF)",
+        "kind": "PDF",
+        "href": "#"
+      },
+      {
+        "title": "Entry paper (PDF)",
+        "kind": "PDF",
+        "href": "#"
+      }
+    ]
+  },
+  {
+    "type": "reflection",
+    "year": "2026",
+    "title": "Sample competition 1",
+    "comp": "c1",
+    "result": "Placed",
+    "text": "What went well, what I got wrong, and what I would change.",
+    "event": "Event name and organizer",
+    "media": [
+      {
+        "src": "/media/sample-1.svg",
+        "caption": "Sample photo 1: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-2.svg",
+        "caption": "Sample photo 2: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-3.svg",
+        "caption": "Sample photo 3: describe what the picture shows."
+      }
+    ],
+    "docs": [
+      {
+        "title": "Certificate (PDF)",
+        "kind": "PDF",
+        "href": "#"
+      },
+      {
+        "title": "Entry paper (PDF)",
+        "kind": "PDF",
+        "href": "#"
+      }
+    ]
+  },
+  {
+    "type": "award",
+    "year": "2025",
+    "title": "Sample award 2",
+    "comp": "c2",
+    "icon": "/icons/sample-award-2.svg",
+    "hue": 330,
+    "text": "Competition name, what it was for, and what it meant to me.",
+    "event": "Event name and organizer",
+    "media": [
+      {
+        "src": "/media/sample-1.svg",
+        "caption": "Sample photo 1: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-2.svg",
+        "caption": "Sample photo 2: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-3.svg",
+        "caption": "Sample photo 3: describe what the picture shows."
+      }
+    ],
+    "docs": [
+      {
+        "title": "Certificate (PDF)",
+        "kind": "PDF",
+        "href": "#"
+      },
+      {
+        "title": "Entry paper (PDF)",
+        "kind": "PDF",
+        "href": "#"
+      }
+    ]
+  },
+  {
+    "type": "reflection",
+    "year": "2025",
+    "title": "Sample competition 2",
+    "comp": "c2",
+    "result": "Did not place",
+    "text": "What went well, what I got wrong, and what I would change.",
+    "event": "Event name and organizer",
+    "media": [
+      {
+        "src": "/media/sample-1.svg",
+        "caption": "Sample photo 1: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-2.svg",
+        "caption": "Sample photo 2: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-3.svg",
+        "caption": "Sample photo 3: describe what the picture shows."
+      }
+    ],
+    "docs": [
+      {
+        "title": "Certificate (PDF)",
+        "kind": "PDF",
+        "href": "#"
+      },
+      {
+        "title": "Entry paper (PDF)",
+        "kind": "PDF",
+        "href": "#"
+      }
+    ]
+  }
+]

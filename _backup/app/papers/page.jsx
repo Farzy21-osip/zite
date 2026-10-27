@@ -1,17 +1,18 @@
 import Meter from "../../components/Meter";
 import { slug } from "../../lib/slug";
-import { papers } from "../../lib/data";
+import { content } from "../../lib/data";
 
 export const metadata = { title: "Papers" };
 
 export default function Page() {
+  const { site, papers } = content();
   const essays = papers.filter((p) => p.kind === "essay");
   const ideas = papers.filter((p) => p.kind === "idea");
   return (
     <main className="page">
       <div className="wrap">
         <h1 className="ph">Research and essays</h1>
-        <p className="lede">Longer pieces of research and writing.</p>
+        <p className="lede">{site.texts.papersPage}</p>
         <ul className="essays">
           {essays.map((p) => (
             <li key={p.title} id={slug(p.title)}>

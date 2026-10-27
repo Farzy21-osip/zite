@@ -1,0 +1,133 @@
+[
+  {
+    "kind": "organization",
+    "title": "Sample organization 1",
+    "org": "Sample school club",
+    "role": "Member",
+    "period": "2024 - now",
+    "year": "2024",
+    "current": true,
+    "accent": "#FF8A3D",
+    "summary": "What this is and what I did there, in a few plain sentences.",
+    "highlights": [
+      {
+        "t": "One thing I did or achieved"
+      },
+      {
+        "t": "One thing I learned"
+      }
+    ],
+    "media": [],
+    "link": "",
+    "related": [
+      {
+        "to": "projects::Sample project A"
+      }
+    ]
+  },
+  {
+    "kind": "organization",
+    "title": "Sample organization 2",
+    "org": "Sample community group",
+    "role": "Volunteer",
+    "period": "2023 - 2024",
+    "year": "2023",
+    "current": false,
+    "accent": "#C9F26A",
+    "summary": "What this is and what I did there, in a few plain sentences.",
+    "highlights": [
+      {
+        "t": "One thing I did or achieved"
+      },
+      {
+        "t": "One thing I learned"
+      }
+    ],
+    "media": [],
+    "link": ""
+  },
+  {
+    "kind": "event",
+    "title": "Sample event",
+    "org": "Sample organizer",
+    "role": "Participant",
+    "period": "May 2025",
+    "year": "2025",
+    "current": false,
+    "accent": "#7DD3FC",
+    "summary": "What this is and what I did there, in a few plain sentences.",
+    "highlights": [
+      {
+        "t": "One thing I did or achieved"
+      },
+      {
+        "t": "One thing I learned"
+      }
+    ],
+    "media": [],
+    "link": ""
+  },
+  {
+    "kind": "volunteering",
+    "title": "Sample volunteering",
+    "org": "Sample host",
+    "role": "Volunteer",
+    "period": "Aug 2025",
+    "year": "2025",
+    "current": false,
+    "accent": "#F9A8D4",
+    "summary": "What this is and what I did there, in a few plain sentences.",
+    "highlights": [
+      {
+        "t": "One thing I did or achieved"
+      },
+      {
+        "t": "One thing I learned"
+      }
+    ],
+    "media": [],
+    "link": ""
+  },
+  {
+    "kind": "course",
+    "title": "Sample course",
+    "org": "Sample provider",
+    "role": "Student",
+    "period": "Jan - Mar 2024",
+    "year": "2024",
+    "current": false,
+    "accent": "#FDE68A",
+    "summary": "What this is and what I did there, in a few plain sentences.",
+    "highlights": [
+      {
+        "t": "One thing I did or achieved"
+      },
+      {
+        "t": "One thing I learned"
+      }
+    ],
+    "media": [],
+    "link": ""
+  },
+  {
+    "kind": "community",
+    "title": "Sample community project",
+    "org": "",
+    "role": "Organizer",
+    "period": "2023",
+    "year": "2023",
+    "current": false,
+    "accent": "#FF8A3D",
+    "summary": "What this is and what I did there, in a few plain sentences.",
+    "highlights": [
+      {
+        "t": "One thing I did or achieved"
+      },
+      {
+        "t": "One thing I learned"
+      }
+    ],
+    "media": [],
+    "link": ""
+  }
+]

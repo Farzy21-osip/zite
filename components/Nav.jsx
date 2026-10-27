@@ -2,11 +2,10 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { site } from "../lib/data";
 
-const links = [["/projects", "Projects"], ["/achievements", "Achievements"], ["/learning", "Learning Journey"], ["/papers", "Papers"], ["#contact", "Contact"]];
+const links = [["/projects", "Projects"], ["/achievements", "Achievements"], ["/activity", "Activity"], ["/papers", "Papers"], ["/me", "Me"]];
 
-export default function Nav() {
+export default function Nav({ site }) {
   const path = usePathname();
   const ul = useRef(null);
   const [ind, setInd] = useState({ x: 0, w: 0, on: false });
@@ -34,10 +33,11 @@ export default function Nav() {
   }, []);
   useEffect(() => { setOpen(false); }, [path]);
 
+  if (path.startsWith("/admin")) return null;
   return (
     <nav className="bar" data-scrolled={scrolled ? "" : undefined} data-open={open ? "" : undefined}>
       <div className="bar-in">
-        <Link href="/" className="brand"><span>{site.first}</span><b>{site.main}</b></Link>
+        <Link href="/" className="brand"><span>{site.first}</span><b>{site.main}</b>{site.last && <span className="last">{site.last}</span>}</Link>
         <button className="burger" aria-expanded={open} onClick={() => setOpen(!open)}>Menu</button>
         <div className="links" onMouseLeave={() => place(active)}>
           <span className="ind" data-on={ind.on ? "" : undefined} style={{ transform: `translateX(${ind.x}px)`, width: ind.w }} />

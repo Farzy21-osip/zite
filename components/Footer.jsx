@@ -2,10 +2,10 @@
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import SpecularButton from "./SpecularButton";
-import { site } from "../lib/data";
 
-export default function Footer() {
-  const home = usePathname() === "/";
+export default function Footer({ site }) {
+  const path = usePathname();
+  const home = path === "/";
   const [note, setNote] = useState("");
 
   // Copies the address instead of forcing the browser to open a mail app, which fails on machines without one.
@@ -15,6 +15,7 @@ export default function Footer() {
     setNote(ok ? "Email copied:" : "My email:");
     setTimeout(() => setNote(""), 4000);
   };
+  if (path.startsWith("/admin")) return null;
   const cta = (
     <div className="cta">
       <SpecularButton size={home ? "lg" : "md"} radius={999} lineColor="#F5B84B" baseColor="#3A4560" textColor="#E8ECF4" onClick={copy}>
@@ -27,7 +28,7 @@ export default function Footer() {
     <div>
       {home && <h2>Contact</h2>}
       <a className="mail" href={`mailto:${site.email}`}>{site.email}</a>
-      <p className="lede">A link to download my CV (PDF) will go here.</p>
+      <p className="lede">{site.texts.cvNote}</p>
     </div>
   );
   return home ? (

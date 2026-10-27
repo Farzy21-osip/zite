@@ -1,10 +1,12 @@
+import Link from "next/link";
 import Stage from "../../components/Stage";
 import { slug } from "../../lib/slug";
-import { achievements } from "../../lib/data";
+import { content } from "../../lib/data";
 
 export const metadata = { title: "Achievements" };
 
 export default function Page() {
+  const { site, achievements } = content();
   const awards = achievements.filter((a) => a.type === "award");
   const reflections = achievements.filter((a) => a.type === "reflection");
   return (
@@ -12,7 +14,7 @@ export default function Page() {
       <Stage items={awards} />
       <div className="wrap">
         <h1 className="ph">Awards</h1>
-        <p className="lede">What I won, and the competition behind each one.</p>
+        <p className="lede">{site.texts.achievementsPage}</p>
         <ol className="awards">
           {awards.map((a) => (
             <li key={a.title} id={slug(a.title)} data-pop={slug(a.title)}>
@@ -20,6 +22,7 @@ export default function Page() {
               <div>
                 <h3 className="at">{a.icon && <img className="ico lg" src={a.icon} alt="" />}{a.title}</h3>
                 <p>{a.text}</p>
+                <Link className="more" href={`/achievements/${slug(a.title)}`}>Open this competition</Link>
               </div>
               {a.icon && <img className="pop" src={a.icon} alt="" />}
             </li>
@@ -34,6 +37,7 @@ export default function Page() {
               <details>
                 <summary><i>{r.year}</i><b>{r.title}</b><em>{r.result}</em></summary>
                 <p>{r.text}</p>
+                <Link className="more" href={`/achievements/${slug(r.title)}`}>Open the full page</Link>
               </details>
             </li>
           ))}

@@ -1,0 +1,30 @@
+[
+  {
+    "kind": "idea",
+    "status": "Exploring",
+    "title": "Sample hypothesis",
+    "blurb": "A short summary of the question and where it stands."
+  },
+  {
+    "kind": "idea",
+    "status": "Draft",
+    "title": "Sample math model",
+    "blurb": "A short summary of the question and where it stands."
+  },
+  {
+    "kind": "essay",
+    "title": "Sample essay",
+    "blurb": "A short summary of the question and where it stands."
+  },
+  {
+    "kind": "essay",
+    "title": "Sample research paper",
+    "blurb": "A short summary of the question and where it stands."
+  },
+  {
+    "kind": "idea",
+    "status": "Draft",
+    "title": "Sample social philosophy piece",
+    "blurb": "A short summary of the question and where it stands."
+  }
+]

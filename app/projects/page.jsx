@@ -1,16 +1,18 @@
 import ProjectBrowser from "../../components/ProjectBrowser";
 import Stage from "../../components/Stage";
-import { projects } from "../../lib/data";
+import { content, topLevel, childrenOf } from "../../lib/data";
 
 export const metadata = { title: "Projects" };
 
 export default function Page() {
+  const { site, projects: all } = content();
+  const projects = topLevel(all).map((p) => ({ ...p, subCount: childrenOf(all, p).length }));
   return (
     <main className="page">
       <Stage items={projects} />
       <div className="wrap">
         <h1 className="ph">Projects</h1>
-        <p className="lede">Hover or tab through a project: its icon pops up and the screen takes on its design.</p>
+        <p className="lede">{site.texts.projectsPage}</p>
         <ProjectBrowser items={projects} />
       </div>
     </main>

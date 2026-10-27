@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { site } from "../lib/data";
+import site from "../content/site.json";
 
 const links = [["/projects", "Projects"], ["/achievements", "Achievements"], ["/learning", "Learning Journey"], ["/papers", "Papers"], ["#contact", "Contact"]];
 
@@ -12,7 +12,8 @@ export default function Nav() {
   const [ind, setInd] = useState({ x: 0, w: 0, on: false });
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const active = links.findIndex(([h]) => h === path);
+  const isOn = (h) => h === path || (!h.startsWith("#") && path.startsWith(h + "/"));
+  const active = links.findIndex(([h]) => isOn(h));
 
   // The glowing pill slides to the hovered link, then settles back on the current page.
   const place = (i) => {
@@ -33,6 +34,7 @@ export default function Nav() {
   }, []);
   useEffect(() => { setOpen(false); }, [path]);
 
+  if (path.startsWith("/admin")) return null;
   return (
     <nav className="bar" data-scrolled={scrolled ? "" : undefined} data-open={open ? "" : undefined}>
       <div className="bar-in">
@@ -45,7 +47,7 @@ export default function Nav() {
               <li key={href} onMouseEnter={() => place(i)} onFocus={() => place(i)} onBlur={() => place(active)}>
                 {href.startsWith("#")
                   ? <a href={href} onClick={() => setOpen(false)}>{label}</a>
-                  : <Link href={href} aria-current={path === href ? "page" : undefined}>{label}</Link>}
+                  : <Link href={href} aria-current={isOn(href) ? "page" : undefined}>{label}</Link>}
               </li>
             ))}
           </ul>

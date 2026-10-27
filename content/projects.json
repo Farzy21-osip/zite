@@ -1,0 +1,321 @@
+[
+  {
+    "kind": "school",
+    "title": "Sample project A",
+    "icon": "/icons/sample-project-a.svg",
+    "hue": 38,
+    "blurb": "One line on the problem and what you built.",
+    "tags": [
+      "Robotics",
+      "Arduino"
+    ],
+    "year": "2026",
+    "summary": "One sentence on what this is and why it matters to me.",
+    "role": "Builder",
+    "status": "Finished",
+    "story": [
+      {
+        "h": "The question",
+        "p": "What I wanted to understand, in a few plain sentences.",
+        "key": true
+      },
+      {
+        "h": "What I tried",
+        "p": "How I approached it: the build or the method."
+      },
+      {
+        "h": "What happened",
+        "p": "The result, with real numbers if there are any.",
+        "key": true
+      },
+      {
+        "h": "What went wrong",
+        "p": "What failed, and what it taught me."
+      },
+      {
+        "h": "What I learned",
+        "p": "What I understand now that I did not before."
+      },
+      {
+        "h": "Next",
+        "p": "What I would explore or improve next."
+      }
+    ],
+    "media": [
+      {
+        "src": "/media/sample-1.svg",
+        "caption": "Sample photo 1: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-2.svg",
+        "caption": "Sample photo 2: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-3.svg",
+        "caption": "Sample photo 3: describe what the picture shows."
+      }
+    ],
+    "docs": [
+      {
+        "title": "Project report (PDF)",
+        "kind": "PDF",
+        "href": "#"
+      },
+      {
+        "title": "Code on GitHub",
+        "kind": "Link",
+        "href": "#"
+      }
+    ]
+  },
+  {
+    "kind": "school",
+    "title": "Sample project B",
+    "icon": "/icons/sample-project-b.svg",
+    "hue": 200,
+    "blurb": "One line on the problem and what you built.",
+    "tags": [
+      "Physics",
+      "Competition"
+    ],
+    "year": "2025",
+    "summary": "One sentence on what this is and why it matters to me.",
+    "role": "Builder",
+    "status": "Finished",
+    "story": [
+      {
+        "h": "The question",
+        "p": "What I wanted to understand, in a few plain sentences.",
+        "key": true
+      },
+      {
+        "h": "What I tried",
+        "p": "How I approached it: the build or the method."
+      },
+      {
+        "h": "What happened",
+        "p": "The result, with real numbers if there are any.",
+        "key": true
+      },
+      {
+        "h": "What went wrong",
+        "p": "What failed, and what it taught me."
+      },
+      {
+        "h": "What I learned",
+        "p": "What I understand now that I did not before."
+      },
+      {
+        "h": "Next",
+        "p": "What I would explore or improve next."
+      }
+    ],
+    "media": [
+      {
+        "src": "/media/sample-1.svg",
+        "caption": "Sample photo 1: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-2.svg",
+        "caption": "Sample photo 2: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-3.svg",
+        "caption": "Sample photo 3: describe what the picture shows."
+      }
+    ],
+    "docs": [
+      {
+        "title": "Project report (PDF)",
+        "kind": "PDF",
+        "href": "#"
+      },
+      {
+        "title": "Code on GitHub",
+        "kind": "Link",
+        "href": "#"
+      }
+    ]
+  },
+  {
+    "kind": "hobby",
+    "title": "Sample project C",
+    "icon": "/icons/sample-project-c.svg",
+    "hue": 165,
+    "blurb": "One line on the problem and what you built.",
+    "tags": [
+      "Electronics",
+      "ESP32"
+    ],
+    "year": "2026",
+    "summary": "One sentence on what this is and why it matters to me.",
+    "role": "Builder",
+    "status": "Finished",
+    "story": [
+      {
+        "h": "The question",
+        "p": "What I wanted to understand, in a few plain sentences.",
+        "key": true
+      },
+      {
+        "h": "What I tried",
+        "p": "How I approached it: the build or the method."
+      },
+      {
+        "h": "What happened",
+        "p": "The result, with real numbers if there are any.",
+        "key": true
+      },
+      {
+        "h": "What went wrong",
+        "p": "What failed, and what it taught me."
+      },
+      {
+        "h": "What I learned",
+        "p": "What I understand now that I did not before."
+      },
+      {
+        "h": "Next",
+        "p": "What I would explore or improve next."
+      }
+    ],
+    "media": [
+      {
+        "src": "/media/sample-1.svg",
+        "caption": "Sample photo 1: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-2.svg",
+        "caption": "Sample photo 2: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-3.svg",
+        "caption": "Sample photo 3: describe what the picture shows."
+      }
+    ],
+    "docs": [
+      {
+        "title": "Project report (PDF)",
+        "kind": "PDF",
+        "href": "#"
+      },
+      {
+        "title": "Code on GitHub",
+        "kind": "Link",
+        "href": "#"
+      }
+    ]
+  },
+  {
+    "kind": "hobby",
+    "title": "Sample project D",
+    "icon": "/icons/sample-project-d.svg",
+    "hue": 280,
+    "blurb": "One line on the problem and what you built.",
+    "tags": [
+      "Software",
+      "Raspberry Pi"
+    ],
+    "year": "2025",
+    "summary": "One sentence on what this is and why it matters to me.",
+    "role": "Builder",
+    "status": "Finished",
+    "story": [
+      {
+        "h": "The question",
+        "p": "What I wanted to understand, in a few plain sentences.",
+        "key": true
+      },
+      {
+        "h": "What I tried",
+        "p": "How I approached it: the build or the method."
+      },
+      {
+        "h": "What happened",
+        "p": "The result, with real numbers if there are any.",
+        "key": true
+      },
+      {
+        "h": "What went wrong",
+        "p": "What failed, and what it taught me."
+      },
+      {
+        "h": "What I learned",
+        "p": "What I understand now that I did not before."
+      },
+      {
+        "h": "Next",
+        "p": "What I would explore or improve next."
+      }
+    ],
+    "media": [
+      {
+        "src": "/media/sample-1.svg",
+        "caption": "Sample photo 1: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-2.svg",
+        "caption": "Sample photo 2: describe what the picture shows."
+      },
+      {
+        "src": "/media/sample-3.svg",
+        "caption": "Sample photo 3: describe what the picture shows."
+      }
+    ],
+    "docs": [
+      {
+        "title": "Project report (PDF)",
+        "kind": "PDF",
+        "href": "#"
+      },
+      {
+        "title": "Code on GitHub",
+        "kind": "Link",
+        "href": "#"
+      }
+    ],
+    "type": "series",
+    "items": [
+      {
+        "title": "Sample piece 1",
+        "kind": "video",
+        "date": "Mar 2026",
+        "platform": "YouTube",
+        "text": "A short note on what this piece is and what I learned making it.",
+        "href": "#"
+      },
+      {
+        "title": "Sample piece 2",
+        "kind": "video",
+        "date": "Feb 2026",
+        "platform": "YouTube",
+        "text": "A short note on what this piece is and what I learned making it.",
+        "href": "#"
+      },
+      {
+        "title": "Sample piece 3",
+        "kind": "post",
+        "date": "Jan 2026",
+        "platform": "Instagram",
+        "text": "A short note on what this piece is and what I learned making it.",
+        "href": "#"
+      },
+      {
+        "title": "Sample piece 4",
+        "kind": "article",
+        "date": "Dec 2025",
+        "platform": "Blog",
+        "text": "A short note on what this piece is and what I learned making it.",
+        "href": "#"
+      },
+      {
+        "title": "Sample piece 5",
+        "kind": "post",
+        "date": "Nov 2025",
+        "platform": "Instagram",
+        "text": "A short note on what this piece is and what I learned making it.",
+        "href": "#"
+      }
+    ]
+  }
+]

@@ -37,7 +37,8 @@ export default function ProjectBrowser({ items }) {
               <h3>{label[cur.kind]}</h3>
               <p className="pt">{cur.title}</p>
               <p>{cur.blurb}</p>
-              <p className="tags">{cur.tags.join("  /  ")}</p>
+              <p className="tags">{(cur.tags ?? []).join("  /  ")}</p>
+              {cur.subCount > 0 && <p className="tags">{cur.subCount} sub-projects inside</p>}
               <Link className="more" href={`/projects/${slug(cur.title)}`}>Open the project</Link>
             </div>
           </aside>

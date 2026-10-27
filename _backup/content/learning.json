@@ -1,0 +1,22 @@
+[
+  {
+    "kind": "explained",
+    "title": "Sample: how a magnet works",
+    "blurb": "A physics idea explained for a child, with drawings."
+  },
+  {
+    "kind": "explained",
+    "title": "Sample: why the sky is blue",
+    "blurb": "A physics idea explained for a child, with drawings."
+  },
+  {
+    "kind": "doodle",
+    "title": "Sample doodle A",
+    "blurb": "A short visual play with a mathematical idea."
+  },
+  {
+    "kind": "doodle",
+    "title": "Sample doodle B",
+    "blurb": "A short visual play with a mathematical idea."
+  }
+]

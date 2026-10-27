@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { slug } from "../lib/slug";
 import Chips from "./Chips";
+import Link from "next/link";
 
 const label = { school: "School and competition", hobby: "Hobby" };
 
@@ -21,9 +22,9 @@ export default function ProjectBrowser({ items }) {
         <ul className="rows">
           {list.map((p, n) => (
             <li key={p.title} id={slug(p.title)} data-pop={slug(p.title)}>
-              <a href="#" data-on={n === i ? "" : undefined} onClick={(e) => e.preventDefault()} onMouseEnter={() => setI(n)} onFocus={() => setI(n)}>
+              <Link href={`/projects/${slug(p.title)}`} data-on={n === i ? "" : undefined} onMouseEnter={() => setI(n)} onFocus={() => setI(n)}>
                 <b>{p.icon && <img className="ico" src={p.icon} alt="" />}{p.title}</b><em>{p.year}</em><span>{p.blurb}</span>
-              </a>
+              </Link>
               {p.icon && <img className="pop" src={p.icon} alt="" />}
             </li>
           ))}
@@ -36,7 +37,8 @@ export default function ProjectBrowser({ items }) {
               <h3>{label[cur.kind]}</h3>
               <p className="pt">{cur.title}</p>
               <p>{cur.blurb}</p>
-              <p className="tags">{cur.tags.join("  /  ")}</p>
+              <p className="tags">{(cur.tags ?? []).join("  /  ")}</p>
+              <Link className="more" href={`/projects/${slug(cur.title)}`}>Open the project</Link>
             </div>
           </aside>
         )}

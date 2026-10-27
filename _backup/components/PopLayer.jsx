@@ -7,15 +7,17 @@ import { usePathname } from "next/navigation";
 export default function PopLayer() {
   const path = usePathname();
   useEffect(() => {
-    let cur = null;
+    let cur = null, lay = null;
     const set = (el) => {
       if (el === cur) return;
       cur?.removeAttribute("data-popping");
-      document.querySelectorAll(".layer[data-on]").forEach((l) => l.removeAttribute("data-on"));
+      lay?.removeAttribute("data-on");
+      lay = null;
       cur = el;
       if (!el) return;
       el.setAttribute("data-popping", "");
-      document.querySelector(`.layer[data-for="${el.dataset.pop}"]`)?.setAttribute("data-on", "");
+      lay = document.querySelector(`.layer[data-for="${el.dataset.pop}"]`);
+      lay?.setAttribute("data-on", "");
     };
     const find = (t) => (t && t.closest ? t.closest("[data-pop]") : null);
     const move = (e) => {

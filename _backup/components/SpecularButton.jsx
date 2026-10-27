@@ -421,7 +421,7 @@ const SpecularButton = ({
       gl.deleteBuffer(buffer);
       gl.deleteVertexArray(vao);
       gl.deleteProgram(program);
-      gl.getExtension('WEBGL_lose_context')?.loseContext();
+      // context is intentionally not force-lost here: React Strict Mode remounts in dev and reuses it
     };
   }, []);
 
